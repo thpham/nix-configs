@@ -17,7 +17,7 @@ in {
       darwin.source = "${inputs.darwin}";
     };
     # Use a custom configuration.nix location.
-    # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin/configuration.nix
+    # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin-configuration.nix
 
     # packages installed in system profile
     # systemPackages = [ ];

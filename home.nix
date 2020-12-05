@@ -23,7 +23,6 @@
       VISUAL = "nvim";
       CLICOLOR = 1;
       LSCOLORS = "ExFxBxDxCxegedabagacad";
-      KAGGLE_CONFIG_DIR = "${config.xdg.configHome}/kaggle";
       JAVA_HOME = "${pkgs.jdk11}";
       # NIX_PATH = "$HOME/.nix-defexpr/channels\${NIX_PATH:+:}$NIX_PATH";
     };
@@ -33,6 +32,7 @@
       # nix stuff
       nixfmt
       niv
+      home-manager
 
       # scripting
       (python3.withPackages
@@ -44,6 +44,7 @@
       gawk
       gnused
       gnugrep
+      gnumake
 
       # dev garbage
       nodejs
@@ -57,6 +58,7 @@
       wget
       ranger
       rsync
+      rclone
       httpie
       pandoc
       ripgrep

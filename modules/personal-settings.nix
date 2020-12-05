@@ -5,7 +5,7 @@
       userEmail = "thomas.pham@ithings.ch";
       userName = "Thomas Pham";
       signing = {
-        key = "thomsa.pham@ithings.ch";
+        key = "A0F2945FCA529E01";
         signByDefault = true;
       };
     };

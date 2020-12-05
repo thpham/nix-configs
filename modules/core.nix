@@ -41,6 +41,7 @@
     jq.enable = true;
     htop.enable = true;
     gpg.enable = true;
+    autojump.enable = true;
     git = {
       enable = true;
       lfs.enable = true;
@@ -48,6 +49,9 @@
         ignore =
           "!gi() { curl -sL https://www.toptal.com/developers/gitignore/api/$@ ;}; gi";
       };
+    };
+    tmux = {
+      enable = true;
     };
 
   };

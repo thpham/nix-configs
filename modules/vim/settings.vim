@@ -2,6 +2,8 @@
 " KEYBINDINGS AND OTHER SETTINGS
 " ###########################################
 
+let mapleader = ","
+
 " General Vim settings
 set number
 set wrap

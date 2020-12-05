@@ -55,8 +55,8 @@ function restartService() {
 }
 
 function rebuildFlake() {
-    command -v darwin-rebuild > /dev/null && darwin-rebuild --flake "$HOME/.nixpkgs/#Laptop" $@ || true
-    command -v nixos-rebuild > /dev/null && sudo nixos-rebuild --flake "/etc/nixos/#Tower" $@ || true
+    command -v darwin-rebuild > /dev/null && darwin-rebuild build --flake "$HOME/.nixpkgs/#Laptop" $@ || true
+    command -v nixos-rebuild > /dev/null && sudo nixos-rebuild build --flake "/etc/nixos/#Tower" $@ || true
 }
 
 function gi() {

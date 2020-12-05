@@ -37,11 +37,16 @@ let
     ${darwinBuild}
   '';
 
+  darwinUpdate = pkgs.writeShellScriptBin "darwinUpdate" ''
+    ${darwinBuild}
+    sudo ./result/activate
+  '';
+
   homebrewInstall = pkgs.writeShellScriptBin "homebrewInstall" ''
     ${pkgs.bash}/bin/bash -c "$(${pkgs.curl}/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   '';
 
 in pkgs.mkShell {
-  buildInputs = [ pkgs.nixFlakes darwinTest darwinInstall homebrewInstall ];
+  buildInputs = [ pkgs.nixFlakes darwinTest darwinInstall darwinUpdate homebrewInstall ];
 }
 

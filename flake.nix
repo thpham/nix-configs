@@ -6,7 +6,7 @@
     stable.url = "github:nixos/nixpkgs/nixos-20.09";
     flake-utils.url = "github:numtide/flake-utils";
     darwin = {
-      url = "github:thpham/nix-darwin";
+      url = "github:thpham/nix-darwin/nix-configs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {

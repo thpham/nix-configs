@@ -11,6 +11,8 @@ let
     vim-closetag
     vim-nix
     vim-polyglot
+    vim-easymotion
+    nerdtree
 
     # vim addon utilities
     ranger-vim
@@ -34,6 +36,7 @@ let
     coc-git
     coc-python
     coc-java
+    coc-go
 
     # theming
     awesome-vim-colorschemes

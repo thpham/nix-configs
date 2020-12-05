@@ -5,7 +5,7 @@
       # disable guest account
       GuestEnabled = false;
       # show name instead of username
-      SHOWFULLNAME = false;
+      SHOWFULLNAME = true;
     };
 
     # file viewer settings

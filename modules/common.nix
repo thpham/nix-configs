@@ -25,6 +25,9 @@ in {
   # environment setup
   environment = {
     systemPackages = with pkgs; [
+      # nix
+      nox
+
       # editors
       vim
       neovim
@@ -41,6 +44,7 @@ in {
       fzf
       ripgrep
       zsh
+      tmux
 
       # languages
       python3
